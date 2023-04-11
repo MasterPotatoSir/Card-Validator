@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jsnhm\\source\\repos\\CreditCardApp\\CreditCardApp\\CreditCardApp.csproj": {}
+    "C:\\Users\\jsnhm\\Documents\\GitHub\\Card-Validator\\CreditCardApp\\CreditCardApp\\CreditCardApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jsnhm\\source\\repos\\CreditCardApp\\CreditCardApp\\CreditCardApp.csproj": {
+    "C:\\Users\\jsnhm\\Documents\\GitHub\\Card-Validator\\CreditCardApp\\CreditCardApp\\CreditCardApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jsnhm\\source\\repos\\CreditCardApp\\CreditCardApp\\CreditCardApp.csproj",
+        "projectUniqueName": "C:\\Users\\jsnhm\\Documents\\GitHub\\Card-Validator\\CreditCardApp\\CreditCardApp\\CreditCardApp.csproj",
         "projectName": "CreditCardApp",
-        "projectPath": "C:\\Users\\jsnhm\\source\\repos\\CreditCardApp\\CreditCardApp\\CreditCardApp.csproj",
+        "projectPath": "C:\\Users\\jsnhm\\Documents\\GitHub\\Card-Validator\\CreditCardApp\\CreditCardApp\\CreditCardApp.csproj",
         "packagesPath": "C:\\Users\\jsnhm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jsnhm\\source\\repos\\CreditCardApp\\CreditCardApp\\obj\\",
+        "outputPath": "C:\\Users\\jsnhm\\Documents\\GitHub\\Card-Validator\\CreditCardApp\\CreditCardApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
