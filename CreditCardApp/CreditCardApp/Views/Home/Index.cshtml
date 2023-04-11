@@ -1,0 +1,41 @@
+﻿@model CredApp.Models.CardModel
+
+@{
+    ViewBag.Title = "Credit Cards";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Credit Cards</h1>
+<form asp-controller="Home" asp-action="GetDetails" method="post">
+    <table>
+        <tr>
+            <br />
+            <td>Card Number :</td>
+            <td><input id="txtCardNum" name="txtCardNum" type="text" onblur="creditCardValidation()"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <br /><input id="Submit1" type="submit" value="submit" />
+            </td>
+        </tr>
+    </table>
+</form>
+<br /><br />
+
+<h2 style="font-style:italic; color:deeppink">@ViewBag.Result</h2>
+
+<script>
+   
+    function creditCardValidation() {
+        var creditCardNum = document.getElementById("txtCardNum");
+
+        var regEx = /^5[1-5][0-9]{14}$|^2(?:2(?:2[1-9]|[3-9][0-9])|[3-6][0-9][0-9]|7(?:[01][0-9]|20))[0-9]{12}$/;
+
+        if (creditCardNum.value.match(regEx)) {
+            document.getElementById("txtCardNum").style.border = "1px solid green";
+        }
+        else {
+            document.getElementById("txtCardNum").style.border = "1px solid red";
+        }
+    }
+</script> 

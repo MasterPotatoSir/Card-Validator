@@ -1,0 +1,40 @@
+﻿@model CredApp.Models.CardModel
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    td , th{
+        padding: 0px 20px 0px 20px;
+    }
+</style>
+<h1>Card Number List</h1>
+
+<div>
+    <dl class="row"></dl>
+</div>
+<div>
+@using (Html.BeginForm("CreditCards", "Home", FormMethod.Post))
+    {
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Card Number</th>
+                <th>Provider</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CardDetailsList)
+            {
+                <tr>
+                    <td>@item.CardNum</td>
+                    <td>@item.CardProv</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+    }
+<a asp-action="Index">Back to List</a>
+</div>
